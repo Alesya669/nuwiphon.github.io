@@ -90,8 +90,8 @@ h2 {
 
 
 .links-list li {
-    margin-bottom: 12px;
-    padding: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .links-list a {
@@ -104,7 +104,6 @@ h2 {
     color: #a0091f;
     text-decoration: underline;
 }
-
 
 .table-container {
     overflow-x: auto;
