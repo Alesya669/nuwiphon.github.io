@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КубГУ - Адаптивная версия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Шапка сайта -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="logo.png" alt="Логотип КубГУ" class="logo">
+                <h1 class="site-title">Кубанский Государственный Университет</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Навигация -->
+<nav class="navigation">
+    <div class="container">
+        <div class="nav-links">
+            <a href="#hyperlinks" class="nav-link">Гиперссылки</a>
+            <a href="#table-section" class="nav-link">Таблица</a>
+            <a href="#contacts" class="nav-link">Контакты</a>
+            <a href="#about" class="nav-link">О нас</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Основное содержимое -->
+<main class="main">
+    <div class="container">
+        <div class="content-wrapper">
+            <!-- Таблица (в HTML потоке идет второй, но на mobile будет первой) -->
+            <section id="table-section" class="content-section table-section">
+                <h2 class="section-title">Таблица факультетов КубГУ</h2>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Факультет</th>
+                            <th>Декан</th>
+                            <th>Студенты</th>
+                            <th>Год</th>
+                            <th>Бюджет</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Математики и компьютерных наук</td>
+                            <td>Иванов А.И.</td>
+                            <td>1200</td>
+                            <td>1970</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Филологический</td>
+                            <td>Петрова М.С.</td>
+                            <td>950</td>
+                            <td>1965</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Исторический</td>
+                            <td>Сидоров В.П.</td>
+                            <td>800</td>
+                            <td rowspan="2">1975</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Экономический</td>
+                            <td>Козлова Е.В.</td>
+                            <td>1500</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Юридический</td>
+                            <td>Николаев Д.К.</td>
+                            <td>1100</td>
+                            <td>1980</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Всего</td>
+                            <td>5550</td>
+                            <td>-</td>
+                            <td>540</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Список ссылок (в HTML потоке идет первым, но на mobile будет вторым) -->
+            <section id="hyperlinks" class="content-section links-section">
+                <h2 class="section-title">Список гиперссылок</h2>
+                <ol class="links-list">
+                    <li><a href="https://www.kubsu.ru/">Официальный сайт КубГУ</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/university">Об университете</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/education">Образование</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/science">Наука</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/abiturient">Абитуриентам</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/student">Студентам</a></li>
+                    <li><a href="tel:+78612605960">+7 (861) 260-59-60</a></li>
+                    <li><a href="mailto:info@kubsu.ru">info@kubsu.ru</a></li>
+                </ol>
+            </section>
+        </div>
+    </div>
+</main>
+
+<!-- Подвал сайта -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2024 Сергей Синица. Кубанский Государственный Университет</p>
+            <p>г. Краснодар, ул. Ставропольская, 149</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
