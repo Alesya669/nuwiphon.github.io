@@ -43,7 +43,9 @@ body {
 
 .main-nav {
  display: flex;
+ flex-direction: column;
     gap: 30px;
+width: 100%;
 
 }
 
@@ -52,6 +54,7 @@ color: white;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    text-align: center;
     }
 
 main {
@@ -87,11 +90,16 @@ h2 {
     font-size: 1.3em;
 }
 
+.links-list {
 
+    padding: 15px;
+    border-radius: 8px;
+
+}
 
 .links-list li {
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-bottom: 12px;
+    padding: 8px;
 }
 
 .links-list a {
