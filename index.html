@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ссылки задание 2 - Адаптивная версия</title>
+    <title>Ссылки задание 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,174 +19,168 @@
                 <a href="https://kubsu.ru/ru/university/departments">Факультеты</a>
             </nav>
         </div>
-        <div class="header-bottom">
 
-        </div>
     </div>
 </header>
 
+<div class="main-container">
+    <div class="content-wrapper">
+        <!-- Список ссылок (первый в HTML) -->
+        <section class="links-section">
 
+            <span>Задание 1</span>
+            <ol>
+                <li>
+                    Абсолютная гиперссылка на главную страницу сайта kubsu.ru
+                    <a href="http://kubsu.ru">Ссылка</a>
+                </li>
+                <li>
+                    Абсолютная на главную сайта kubsu.ru в протоколе https
+                    <a href="https://kubsu.ru">Ссылка</a>
+                </li>
+                <li>
+                    <p>Ссылка-изображение</p>
+                    <a href="https://kubsu.ru">
+                        <img src="ca.jpg" alt="error" width="150" height="150">
+                    </a>
+                </li>
+                <li>
+                    Сокращенная ссылка на внутреннюю страницу
+                    <a href="/index.html">Ссылка</a>
+                </li>
+                <li>
+                    Сокращенная ссылка на главную страницу
+                    <a href="/">Ссылка</a>
+                </li>
+                <li><a href="#form">Ссылка на фрагмент текущей страницы (форма)</a></li>
+                <li>
+                    Ссылка с тремя параметрами в URL
+                    <a href="https://kubsu.ru/?faculty=rgf&area=op&group=13">Ссылка</a>
+                </li>
+                <li>
+                    Ссылка с параметром id в URL
+                    <a href="https://kubsu.ru/?id=660">Ссылка</a>
+                </li>
+                <li>
+                    Относительная ссылка в текущем каталоге
+                    <a href="./">Ссылка</a>
+                </li>
+                <li>
+                    Относительная ссылка в каталоге about
+                    <a href="/about">Ссылка</a>
+                </li>
+                <li>
+                    Относительная ссылка на уровень выше
+                    <a href="../">Ссылка</a>
+                </li>
+                <li>
+                    Относительная ссылка на два уровня выше
+                    <a href="../../">Ссылка</a>
+                </li>
+                <li>
+                    Контекстная ссылка в тексте
+                    Текст с <a href="#form">контекстной ссылкой</a> внутри.
+                </li>
+                <li>
+                    Ссылка на фрагмент стороннего сайта
+                    <a href="https://www.iana.org/help/example-domains#legalnotice">Ссылка</a>
+                </li>
+                <li>
+                    <p>Ссылка из областей картинки</p>
+                    <img src="car.jpg" alt="Картинка с разными областями" usemap="#car"
+                         width="300" height="300">
+                    <map name="car">
+                        <area shape="rect" coords="0,0,150,300" href="https://kubsu.ru/" alt="rect">
+                        <area shape="circle" coords="150,150,150" href="https://kubsu.ru/education" alt="circle">
+                    </map>
+                </li>
+                <li>
+                    Ссылка с пустым href
+                    <a href="">Cсылка</a>
+                </li>
+                <li>
+                    Ссылка без href
+                    <a>Ссылка</a>
+                </li>
+                <li>
+                    Ссылка с запретом перехода для поисковиков
+                    <a href="https://kubsu.ru/no-follow" rel="nofollow">Ссылка</a>
+                </li>
+                <li>
+                    Ссылка с запретом индексации
+                    <a href="https://kubsu.ru/no-index" rel="noindex">Cсылка</a>
+                </li>
+                <li>
+                    <p>Нумерованный список с title </p>
+                    <ol>
+                        <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
+                        <li><a href="https://kubsu.ru/university" title="Информация об университете">Об университете</a></li>
+                        <li><a href="https://kubsu.ru/education" title="Образовательные программы">Образование</a></li>
+                    </ol>
+                </li>
+                <li>
+                    Ссылка на FTP с авторизацией
+                    <a href="ftp://student6:969@kubsu.ru/">FTP файл</a>
+                </li>
+            </ol>
+        </section>
 
-<main class="main">
-    <div class="container">
-        <div class="content-wrapper">
+        <!-- Таблица (второй в HTML) -->
+        <section id="table-section" class="table-section">
+            <h2>Таблица факультетов</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Факультет</th>
+                    <th>Декан</th>
+                    <th>Количество студентов</th>
+                    <th>Аудитории</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Математики и компьютерных наук</td>
+                    <td>Иванова А.И.</td>
+                    <td>1200</td>
+                    <td>101-210</td>
+                </tr>
+                <tr>
+                    <td>Филологический</td>
+                    <td>Петров М.С.</td>
+                    <td>1100</td>
+                    <td>301-415</td>
+                </tr>
+                <tr>
+                    <td>Исторический</td>
+                    <td>Сидоров В.П.</td>
+                    <td>800</td>
+                    <td>501-510</td>
+                </tr>
+                <tr>
+                    <td>Экономический</td>
+                    <td>Иванов Е.В.</td>
+                    <td>800</td>
+                    <td>201-250</td>
+                </tr>
+                <tr>
+                    <td>Юридический</td>
+                    <td>Сергеев Д.К.</td>
+                    <td>150</td>
+                    <td rowspan="2">40-43</td>
+                </tr>
+                <tr>
+                    <td>Тачки 2</td>
+                    <td>Молния М.К.</td>
+                    <td>1562</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
 
-            <section id="table-section" class="content-section table-section">
-                <h2 class="section-title">Таблица факультетов</h2>
-                <div class="table-container">
-                    <table class="data-table">
-                        <thead>
-                        <tr>
-                            <th>Факультет</th>
-                            <th>Декан</th>
-                            <th>Количество студентов</th>
-                            <th>Аудитории</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Математики и компьютерных наук</td>
-                            <td>Иванова А.И.</td>
-                            <td>1200</td>
-                            <td>101-210</td>
-                        </tr>
-                        <tr>
-                            <td>Филологический</td>
-                            <td>Петров М.С.</td>
-                            <td>1100</td>
-                            <td>301-415</td>
-                        </tr>
-                        <tr>
-                            <td>Исторический</td>
-                            <td>Сидоров В.П.</td>
-                            <td>800</td>
-                            <td>501-510</td>
-                        </tr>
-                        <tr>
-                            <td>Экономический</td>
-                            <td>Иванов Е.В.</td>
-                            <td>800</td>
-                            <td>201-250</td>
-                        </tr>
-                        <tr>
-                            <td>Юридический</td>
-                            <td>Сергеев Д.К.</td>
-                            <td>150</td>
-                            <td rowspan="2">40-43</td>
-                        </tr>
-                        <tr>
-                            <td>Тачки 2</td>
-                            <td>Молния М.К.</td>
-                            <td>1562</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-
-            <section class="links-section">
-                <h2>Ссылки</h2>
-                <ol class="links-list">
-                    <li>
-                        Абсолютная гиперссылка на главную страницу сайта kubsu.ru
-                        <a href="http://kubsu.ru">Ссылка</a>
-                    </li>
-                    <li>
-                        Абсолютная на главную сайта kubsu.ru в протоколе https
-                        <a href="https://kubsu.ru">Ссылка</a>
-                    </li>
-                    <li>
-                        <p>Ссылка-изображение</p>
-                        <a href="https://kubsu.ru">
-                            <img src="ca.jpg" alt="Молния маквин" width="150" height="150"  class="link-image">
-                        </a>
-                    </li>
-                    <li>
-                        Сокращенная ссылка на внутреннюю страницу
-                        <a href="/index.html">Ссылка</a>
-                    </li>
-                    <li>
-                        Сокращенная ссылка на главную страницу
-                        <a href="/">Ссылка</a>
-                    </li>
-                    <li>
-                        <a href="#form">Ссылка на фрагмент текущей страницы (форма)</a>
-                    </li>
-                    <li>
-                        Ссылка с тремя параметрами в URL
-                        <a href="https://kubsu.ru/?faculty=rgf&area=op&group=13">Ссылка</a>
-                    </li>
-                    <li>
-                        Ссылка с параметром id в URL
-                        <a href="https://kubsu.ru/?id=660">Ссылка</a>
-                    </li>
-                    <li>
-                        Относительная ссылка в текущем каталоге
-                        <a href="./">Ссылка</a>
-                    </li>
-                    <li>
-                        Относительная ссылка в каталоге about
-                        <a href="/about">Ссылка</a>
-                    </li>
-                    <li>
-                        Относительная ссылка на уровень выше
-                        <a href="../">Ссылка</a>
-                    </li>
-                    <li>
-                        Относительная ссылка на два уровня выше
-                        <a href="../../">Ссылка</a>
-                    </li>
-                    <li>
-                        Контекстная ссылка в тексте
-                        Текст с <a href="#form">контекстной ссылкой</a> внутри.
-                    </li>
-                    <li>
-                        Ссылка на фрагмент стороннего сайта
-                        <a href="https://www.iana.org/help/example-domains#legalnotice">Ссылка</a>
-                    </li>
-                    <li>
-                        <p>Ссылка из областей картинки</p>
-                        <img src="car.jpg" alt="Картинка с разными областями" usemap="#car" class="image-map"  width="300" height="300">
-                        <map name="car">
-                            <area shape="rect" coords="0,0,150,300" href="https://kubsu.ru/" alt="rect">
-                            <area shape="circle" coords="150,150,150" href="https://kubsu.ru/education" alt="circle">
-                        </map>
-                    </li>
-                    <li>
-                        Ссылка с пустым href
-                        <a href="">Cсылка</a>
-                    </li>
-                    <li>
-                        Ссылка без href
-                        <a>Ссылка</a>
-                    </li>
-                    <li>
-                        Ссылка с запретом перехода для поисковиков
-                        <a href="https://kubsu.ru/no-follow" rel="nofollow">Ссылка</a>
-                    </li>
-                    <li>
-                        Ссылка с запретом индексации
-                        <a href="https://kubsu.ru/no-index" rel="noindex">Cсылка</a>
-                    </li>
-                    <li>
-                        <p>Нумерованный список с title </p>
-                        <ol class="sublist">
-                            <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
-                            <li><a href="https://kubsu.ru/university" title="Информация об университете">Об университете</a></li>
-                            <li><a href="https://kubsu.ru/education" title="Образовательные программы">Образование</a></li>
-                        </ol>
-                    </li>
-                    <li>
-                        Ссылка на FTP с авторизацией
-                        <a href="ftp://student6:969@kubsu.ru/">FTP файл</a>
-                    </li>
-                </ol>
-            </section>
-        </div>
-
+    <!-- Форма (вне flex order) -->
+    <section id="form">
         <h2>Форма обратной связи</h2>
-
         <form action="/" method="post">
             <div>
                 <label>ФИО:
@@ -256,13 +250,12 @@
                 <button type="submit" style="margin: 10px;">Сохранить</button>
             </div>
         </form>
-    </div>
-</main>
+    </section>
+</div>
 
-<img src="ca.jpg" alt="error" id="lol" style="margin-top: 1000px;">
 <footer id="site-footer">
     <div class="container">
-        <p>&copy;2025 Руденко Алеся. Кубанский Государственный Университет</p>
+        <p> <img src="ca.jpg" alt="error" id="lol"  width="150" height="150"> 2025 Руденко Алеся. Кубанский Государственный Университет</p>
     </div>
 </footer>
 </body>
