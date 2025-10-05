@@ -44,15 +44,7 @@ body {
 
 
 
-/*.header-bottom {
-    padding: 20px 0;
-    text-align: center;
-}
 
-.header-bottom h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
 
 /* Основной контейнер */
 .main-container {
@@ -131,9 +123,8 @@ tr:nth-child(odd) {
     margin: 10px 0;
 }
 
-/* ===== MOBILE FIRST: Стили для телефонов ===== */
+/* ===== Стили для телефонов ===== */
 
-/* Навигация для мобильных */
 @media (max-width: 767px) {
     .header-top {
         flex-direction: column;
@@ -157,7 +148,7 @@ tr:nth-child(odd) {
         font-size: 1.8em;
     }
 
-    /* На мобильных таблица идет первой */
+
     .content-wrapper {
         display: flex;
         flex-direction: column;
@@ -172,15 +163,14 @@ tr:nth-child(odd) {
     }
 }
 
-/* ===== Стили для планшетов и компьютеров ===== */
+/* ===== Стили для компьютеров ===== */
 @media (min-width: 769px) {
     .content-wrapper {
         display: flex;
-        flex-direction: column; /* Изменено с row на column */
+        flex-direction: column;
         gap: 30px;
     }
 
-    /* На компьютере оставляем порядок как в HTML */
     .links-section {
         order: 1;
         flex: 1;
